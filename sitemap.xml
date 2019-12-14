@@ -3,8 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://gamseb.github.io/general/</loc>
+    <lastmod>2019-12-14T22:42:07+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://gamseb.github.io/linux/</loc>
     <lastmod>2019-12-14T22:02:01+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gamseb.github.io/general/hugo/</loc>
+    <lastmod>2019-12-14T22:42:44+01:00</lastmod>
   </url>
   
   <url>

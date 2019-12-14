@@ -12,6 +12,19 @@
     
     
     <item>
+      <title>Hosting hugo on github</title>
+      <link>https://gamseb.github.io/general/hugo/</link>
+      <pubDate>Sat, 14 Dec 2019 22:42:44 +0100</pubDate>
+      
+      <guid>https://gamseb.github.io/general/hugo/</guid>
+      <description>Hugo is a static website generator and github pages are a free way to host webpages Prerequisites:
+ Hugo (https://github.com/gohugoio/hugo) A working hugo website  Hosting on github   Create two github repositories:
+One will contain the hugo source files and can be named anything you like. I will name it blog.
+The second one must be called .github.io and will contain the final files.
+  Clone the them to your computer and put them both into one folder.</description>
+    </item>
+    
+    <item>
       <title>Animated wallpapers</title>
       <link>https://gamseb.github.io/linux/animated_wallpaper/</link>
       <pubDate>Sat, 14 Dec 2019 21:51:14 +0100</pubDate>

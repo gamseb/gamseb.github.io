@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>General on Gam&#39;s fragments</title>
+    <link>https://gamseb.github.io/general/</link>
+    <description>Recent content in General on Gam&#39;s fragments</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 14 Dec 2019 22:42:07 +0100</lastBuildDate>
+    
+	<atom:link href="https://gamseb.github.io/general/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hosting hugo on github</title>
+      <link>https://gamseb.github.io/general/hugo/</link>
+      <pubDate>Sat, 14 Dec 2019 22:42:44 +0100</pubDate>
+      
+      <guid>https://gamseb.github.io/general/hugo/</guid>
+      <description>Hugo is a static website generator and github pages are a free way to host webpages Prerequisites:
+ Hugo (https://github.com/gohugoio/hugo) A working hugo website  Hosting on github   Create two github repositories:
+One will contain the hugo source files and can be named anything you like. I will name it blog.
+The second one must be called .github.io and will contain the final files.
+  Clone the them to your computer and put them both into one folder.</description>
+    </item>
+    
+  </channel>
+</rss>

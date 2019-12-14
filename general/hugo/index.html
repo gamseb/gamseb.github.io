@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Tags :: Gam&#39;s fragments</title>
+    <title>Hosting hugo on github :: Gam&#39;s fragments</title>
 
     
     <link href="/css/nucleus.css?1576361544" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/tags/">
+  <body class="" data-url="/general/hugo/">
     <nav id="sidebar" class="">
 
 
@@ -94,7 +94,7 @@
   
     
     <li data-nav-id="/general/" title="General" class="dd-item 
-        
+        parent
         
         
         ">
@@ -118,7 +118,7 @@
  
   
     
-      <li data-nav-id="/general/hugo/" title="Hosting hugo on github" class="dd-item ">
+      <li data-nav-id="/general/hugo/" title="Hosting hugo on github" class="dd-item active">
         <a href="/general/hugo/">
         Hosting hugo on github
         
@@ -227,14 +227,22 @@
                   <span class="links">
                  
                  
-                   Tags 
+                   Hosting hugo on github 
                  
                   </span>
                 </div>
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -250,7 +258,7 @@
           
             <h1>
               
-              Tags
+              Hosting hugo on github
             </h1>
           
 
@@ -258,17 +266,41 @@
 
 
 
-
-
-
+<h4 id="hugo-is-a-static-website-generator-and-github-pages-are-a-free-way-to-host-webpages">Hugo is a static website generator and github pages are a free way to host webpages</h4>
+<p>Prerequisites:</p>
 <ul>
-	
+<li>Hugo (<a href="https://github.com/gohugoio/hugo">https://github.com/gohugoio/hugo</a>)</li>
+<li>A working hugo website</li>
 </ul>
+<h4 id="hosting-on-github">Hosting on github</h4>
+<ol>
+<li>
+<p>Create two github repositories:</p>
+<p>One will contain the hugo source files and can be named anything you like. I will name it <strong>blog</strong>.</p>
+<p>The second one must be called <strong><!-- raw HTML omitted -->.github.io</strong> and will contain the final files.</p>
+</li>
+<li>
+<p>Clone the them to your computer and put them both into one folder.</p>
+</li>
+<li>
+<p>Copy your hugo files into the first repository and make sure it works with <code>hugo serve</code>.</p>
+</li>
+<li>
+<p>Once ready to deploy, commit your changes. Then use <code>hugo -d ../&lt;username&gt;.github.io</code> to deploy the websites files to the folder. By using this command you will get the files in the format that is needed to host them on github pages.</p>
+</li>
+<li>
+<p><code>cd</code> into the other folder and use <code>git add *</code>, then <code>git commit -m &quot;&lt;message&gt;&quot;</code> and then <code>git push</code>. You will be asked for your password and username.</p>
+</li>
+<li>
+<p>Once done you can navigate to <strong><!-- raw HTML omitted -->.github.io</strong> to see the webpage.</p>
+</li>
+</ol>
 
 
 <footer class=" footline" >
 	
 </footer>
+
 
         
         </div> 
@@ -301,8 +333,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -316,6 +346,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -335,6 +366,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -398,3 +432,4 @@
 
   </body>
 </html>
+

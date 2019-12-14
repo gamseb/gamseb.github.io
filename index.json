@@ -1,10 +1,24 @@
 [
 {
+	"uri": "https://gamseb.github.io/general/",
+	"title": "General",
+	"tags": [],
+	"description": "",
+	"content": "General Some general tech stuff "
+},
+{
 	"uri": "https://gamseb.github.io/linux/",
 	"title": "Linux",
 	"tags": [],
 	"description": "",
 	"content": "Kernel magic and stuff Linux "
+},
+{
+	"uri": "https://gamseb.github.io/general/hugo/",
+	"title": "Hosting hugo on github",
+	"tags": [],
+	"description": "",
+	"content": "Hugo is a static website generator and github pages are a free way to host webpages Prerequisites:\n Hugo (https://github.com/gohugoio/hugo) A working hugo website  Hosting on github   Create two github repositories:\nOne will contain the hugo source files and can be named anything you like. I will name it blog.\nThe second one must be called .github.io and will contain the final files.\n  Clone the them to your computer and put them both into one folder.\n  Copy your hugo files into the first repository and make sure it works with hugo serve.\n  Once ready to deploy, commit your changes. Then use hugo -d ../\u0026lt;username\u0026gt;.github.io to deploy the websites files to the folder. By using this command you will get the files in the format that is needed to host them on github pages.\n  cd into the other folder and use git add *, then git commit -m \u0026quot;\u0026lt;message\u0026gt;\u0026quot; and then git push. You will be asked for your password and username.\n  Once done you can navigate to .github.io to see the webpage.\n  "
 },
 {
 	"uri": "https://gamseb.github.io/",
