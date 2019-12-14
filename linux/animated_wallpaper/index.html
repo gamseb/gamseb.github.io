@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Gam&#39;s fragments :: Gam&#39;s fragments</title>
+    <title>Animated wallpapers :: Gam&#39;s fragments</title>
 
     
     <link href="/css/nucleus.css?1576358843" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/">
+  <body class="" data-url="/linux/animated_wallpaper/">
     <nav id="sidebar" class="">
 
 
@@ -94,7 +94,7 @@
   
     
     <li data-nav-id="/linux/" title="Linux" class="dd-item 
-        
+        parent
         
         
         ">
@@ -118,7 +118,7 @@
  
   
     
-      <li data-nav-id="/linux/animated_wallpaper/" title="Animated wallpapers" class="dd-item ">
+      <li data-nav-id="/linux/animated_wallpaper/" title="Animated wallpapers" class="dd-item active">
         <a href="/linux/animated_wallpaper/">
         Animated wallpapers
         
@@ -160,33 +160,80 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                   Animated wallpapers 
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents"></nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
         <div id="head-tags">
         
         </div>
         
         <div id="body-inner">
           
+            <h1>
+              
+              Animated wallpapers
+            </h1>
+          
 
         
 
 
-<span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> navigation</a>
-</span>
 
-           
+<h1 id="creating-animated-wallpapers-from-gif-files">Creating animated wallpapers from .gif files</h1>
+<p>It can be tricky to do some things in the i3wm windows manager. I have searched for a long time for a way to run gifs as an animated background. It is especially nice when you have a loop of falling rain or koi fish in a pond.</p>
+<p>Here is what you will need:</p>
+<p>Prerequisites:</p>
+<ul>
+<li>xwinwrap</li>
+</ul>
+<p><code>animated_background.sh</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/sh
+</span><span style="color:#75715e"></span>
+<span style="color:#f92672">[</span> -z <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]</span> <span style="color:#f92672">&amp;&amp;</span> exit
+
+killall xwinwrap
+
+sleep 0.3
+
+xwinwrap -ov -g 1366x768+0+0 -- mpv -wid WID <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> --no-osc --no-osd-bar --loop-file --player-operation-mode<span style="color:#f92672">=</span>cplayer --no-audio --panscan<span style="color:#f92672">=</span>1.0 --no-keepaspect --no-input-default-bindings --hwdec&amp;
+
+</code></pre></div><p>Make the file executable <code>chmod +x animated_background.sh</code></p>
+<p>To run the script simply run <code>./animated_background.sh &lt;path-to-gif&gt;</code> from the file location.</p>
+
+
+<footer class=" footline" >
 	
-		<h1>Customize your own home page</h1>
-		<p>
-		  The site is working. Don't forget to customize this homepage with your own. You typically have 3 choices :
-		</p>
-		<ul>
-			<li><b>1. </b> Create an _index.md document in <b>content</b> folder and fill it with Markdown content</li>
-			<li><b>2. </b> Create an <b>index.html</b> file in the <b>static</b> folder and fill the file with HTML content</li>
-		  <li><b>3. </b> Configure your server to automatically redirect home page to one your documentation page</li>
-		</ul>
-	
-  
+</footer>
+
+
         
         </div> 
         
@@ -218,8 +265,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -233,6 +278,7 @@
             
             
                 
+                    
                     
                 
                 

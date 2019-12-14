@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on Gam&#39;s fragments</title>
+    <link>http://example.org/linux/</link>
+    <description>Recent content in Linux on Gam&#39;s fragments</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 14 Dec 2019 22:02:01 +0100</lastBuildDate>
+    
+	<atom:link href="http://example.org/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Animated wallpapers</title>
+      <link>http://example.org/linux/animated_wallpaper/</link>
+      <pubDate>Sat, 14 Dec 2019 21:51:14 +0100</pubDate>
+      
+      <guid>http://example.org/linux/animated_wallpaper/</guid>
+      <description>Creating animated wallpapers from .gif files It can be tricky to do some things in the i3wm windows manager. I have searched for a long time for a way to run gifs as an animated background. It is especially nice when you have a loop of falling rain or koi fish in a pond.
+Here is what you will need:
+Prerequisites:
+ xwinwrap  animated_background.sh
+#!/bin/sh  [ -z &amp;#34;$1&amp;#34; ] &amp;amp;&amp;amp; exit killall xwinwrap sleep 0.</description>
+    </item>
+    
+  </channel>
+</rss>

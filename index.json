@@ -1,0 +1,36 @@
+[
+{
+	"uri": "http://example.org/linux/",
+	"title": "Linux",
+	"tags": [],
+	"description": "",
+	"content": "Kernel magic and stuff Linux "
+},
+{
+	"uri": "http://example.org/linux/animated_wallpaper/",
+	"title": "Animated wallpapers",
+	"tags": [],
+	"description": "",
+	"content": "Creating animated wallpapers from .gif files It can be tricky to do some things in the i3wm windows manager. I have searched for a long time for a way to run gifs as an animated background. It is especially nice when you have a loop of falling rain or koi fish in a pond.\nHere is what you will need:\nPrerequisites:\n xwinwrap  animated_background.sh\n#!/bin/sh  [ -z \u0026#34;$1\u0026#34; ] \u0026amp;\u0026amp; exit killall xwinwrap sleep 0.3 xwinwrap -ov -g 1366x768+0+0 -- mpv -wid WID \u0026#34;$1\u0026#34; --no-osc --no-osd-bar --loop-file --player-operation-mode=cplayer --no-audio --panscan=1.0 --no-keepaspect --no-input-default-bindings --hwdec\u0026amp; Make the file executable chmod +x animated_background.sh\nTo run the script simply run ./animated_background.sh \u0026lt;path-to-gif\u0026gt; from the file location.\n"
+},
+{
+	"uri": "http://example.org/",
+	"title": "Gam&#39;s fragments",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://example.org/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://example.org/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]
