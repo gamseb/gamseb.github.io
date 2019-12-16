@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Animated_wallpaper :: Gam&#39;s website — A simple, retro theme for Hugo</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="Creating animated wallpapers from .gif or video files There is one thing that I wanted to do for a long time. I was a bit envious of the wallpaper engine from windows. that allows you to run a gif/video in the background as wallpaper. So I have decided to create a script with similar functionality in i3wm. This is how I did it:
+Prerequisites:
+ xwinwrap  animated_background.sh
+#!/bin/sh  [ -z &amp;#34;$1&amp;#34; ] &amp;amp;&amp;amp; exit killall xwinwrap sleep 0."/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/posts/animated_wallpaper/" />
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+<link rel="shortcut icon" href="/img/favicon/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Animated_wallpaper :: Gam&#39;s website — A simple, retro theme for Hugo" />
+<meta name="twitter:description" content="Creating animated wallpapers from .gif or video files There is one thing that I wanted to do for a long time. I was a bit envious of the wallpaper engine from windows. that allows you to run a gif/video in the background as wallpaper. So I have decided to create a script with similar functionality in i3wm. This is how I did it:
+Prerequisites:
+ xwinwrap  animated_background.sh
+#!/bin/sh  [ -z &amp;#34;$1&amp;#34; ] &amp;amp;&amp;amp; exit killall xwinwrap sleep 0." />
+<meta name="twitter:site" content="/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image" content="">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Animated_wallpaper :: Gam&#39;s website — A simple, retro theme for Hugo">
+<meta property="og:description" content="Creating animated wallpapers from .gif or video files There is one thing that I wanted to do for a long time. I was a bit envious of the wallpaper engine from windows. that allows you to run a gif/video in the background as wallpaper. So I have decided to create a script with similar functionality in i3wm. This is how I did it:
+Prerequisites:
+ xwinwrap  animated_background.sh
+#!/bin/sh  [ -z &amp;#34;$1&amp;#34; ] &amp;amp;&amp;amp; exit killall xwinwrap sleep 0." />
+<meta property="og:url" content="/posts/animated_wallpaper/" />
+<meta property="og:site_name" content="Animated_wallpaper" />
+<meta property="og:image" content="">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2019-12-16 22:59:25 &#43;0100 CET" />
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Gam&#39;s site
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/">Posts</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/">Posts</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/posts/animated_wallpaper/">Animated_wallpaper</a></h1>
+  <div class="post-meta">
+      
+    <span class="post-date">
+      2019-12-16
+    </span>
+    
+    
+  </div>
+
+  
+
+  
+
+  <div class="post-content">
+    <h4 id="creating-animated-wallpapers-from-gif-or-video-files">Creating animated wallpapers from .gif or video files</h4>
+<p>There is one thing that I wanted to do for a long time. I was a bit envious of the wallpaper engine from windows. that allows you to run a gif/video in the background as wallpaper. So I have decided to create a script with similar functionality in i3wm. This is how I did it:</p>
+<p>Prerequisites:</p>
+<ul>
+<li>xwinwrap</li>
+</ul>
+<p><code>animated_background.sh</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/sh
+</span><span style="color:#75715e"></span>
+<span style="color:#f92672">[</span> -z <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]</span> <span style="color:#f92672">&amp;&amp;</span> exit
+
+killall xwinwrap
+
+sleep 0.3
+
+xwinwrap -ov -g 1366x768+0+0 -- mpv -wid WID <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> --no-osc --no-osd-bar --loop-file --player-operation-mode<span style="color:#f92672">=</span>cplayer --no-audio --panscan<span style="color:#f92672">=</span>1.0 --no-keepaspect --no-input-default-bindings --hwdec&amp;
+
+</code></pre></div><p>Make the file executable <code>chmod +x animated_background.sh</code></p>
+<p>To run the script simply run <code>./animated_background.sh &lt;path-to-gif/video&gt;</code> from the file location.</p>
+
+  </div>
+  
+  <div class="pagination">
+    <div class="pagination__title">
+      <span
+        class="pagination__title-h">Read other posts</span>
+      <hr />
+    </div>
+    <div class="pagination__buttons">
+      
+      
+      <span class="button next">
+        <a href="/posts/hugo/">
+          <span class="button__text">Hosting hugo on github</span>
+          <span class="button__icon">→</span>
+        </a>
+      </span>
+      
+    </div>
+  </div>
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2019 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
